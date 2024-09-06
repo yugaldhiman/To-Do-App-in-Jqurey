@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#mainBox {
+    height: 100vh;
+    width: 100%;
+    border: 5px solid black;
+}
+#child-1{
+    height: 50vh;
+    width: 100%;
+    border: 5px solid black;
+    font-size: 4rem;
+}
+textarea{
+    height: 49vh;
+    width: 100%;
+    border: none;
+    font-size: large;
+}
+#btn{
+    height: 8vh;
+    width: 10%;
+    border: 5px solid black;
+    font-size: 3rem;
+}
+#child-2{
+    height: 42vh;
+    width: 100%;
+    border: 5px solid black;
+    font-size: 3rem;
+}

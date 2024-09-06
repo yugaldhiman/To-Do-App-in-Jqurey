@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <script src="jQurye.js"></script>
+    <style>
+      input[type="text"] {
+        padding: 1%;
+        background-color: rgb(225, 239, 245);
+      }
+      #btn {
+        margin-left: 1%;
+        padding: 0.5% 4%;
+        background-color: whitesmoke;
+        color: black;
+      }
+      #btn2 {
+        margin-left: 1%;
+        padding: 0.5% 4%;
+        background-color: whitesmoke;
+        color: black;
+      }
+      #divText {
+        margin-top: 1%;
+        width: 11%;
+        height: 20vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>To-Do List</h2>
+    <input type="text" id="text" placeholder="Enter value" />
+    <button id="btn">Add</button>
+    <button id="btn2">Delete</button>
+    <div>
+      <textarea name="" id="divText" cols="30"></textarea>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          data = $("#text").val();
+          $("#divText").append(data);
+        });
+        $("#btn2").click(function () {
+          $("#divText").empty();
+        });
+      });
+    </script>
+  </body>
+</html>
